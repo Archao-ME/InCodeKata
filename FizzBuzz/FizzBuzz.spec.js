@@ -18,8 +18,12 @@ function getFizzBuzz(number) {
     if (number.toString().indexOf('5') >= 0) {
         return 'Buzz'
     }
+    return number
 }
 // TODO: 用Each遍历测试
+test('should return itself', () => {
+    expect(getFizzBuzz(4)).toEqual(4)
+})
 test('should return Fizz if input 3', () => {
     expect(getFizzBuzz(3)).toEqual('Fizz')
 })
