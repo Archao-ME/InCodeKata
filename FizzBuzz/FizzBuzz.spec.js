@@ -1,5 +1,5 @@
 function fizzBuzz(num) {
-    if (num% 3 === 0 && num % 5 === 0) {
+    if (num % 3 === 0 && num % 5 === 0) {
         return 'FizzBuzz'
     }
     if (num.toString().includes('3') && num.toString().includes('5')) {
@@ -11,7 +11,6 @@ function fizzBuzz(num) {
     if (num % 5 === 0) {
         return 'Buzz'
     }
-
     if (num.toString().includes('3')) {
         return 'Fizz'
     }
@@ -29,6 +28,6 @@ test.each([
     [31, 'Fizz'],
     [52, 'Buzz'],
     [53, 'FizzBuzz']
-])('Input %s ouput %s', (a, b) => {
+])('Input %s output %s', (a, b) => {
     expect(fizzBuzz(a)).toEqual(b)
 })
